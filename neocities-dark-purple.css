@@ -1,3 +1,15 @@
+/* ==UserStyle==
+@name         Neocities Dark & Purple
+@version      20250814.18.08
+@namespace    https://github.com/legitleemon/neocities-dark-purple/
+@description  Dark theme for neocities.org, with details in dark purple. Does not apply to user websites.
+@homepage     https://github.com/legitleemon/neocities-dark-purple/
+@author       Lee-Mon (https://lee-mon.neocities.org/)
+@license      Unlicense
+==/UserStyle== */
+
+@-moz-document url-prefix("https://neocities.org") {
+
 /*
  * Neocities Dark & Purple by Lee-Mon - 2025-08-14
  * I'm sharing this theme in hopes that it'll be useful to someone.
@@ -413,4 +425,5 @@ select, .select-Container::after {
 
 .popover a {
     color: var(--main-text);
+}
 }
