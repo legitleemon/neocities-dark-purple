@@ -1,0 +1,416 @@
+/*
+ * Neocities Dark & Purple by Lee-Mon - 2025-08-14
+ * I'm sharing this theme in hopes that it'll be useful to someone.
+ * It doesn't include a theme for the HTML tutorial, and there's definitely
+ * some elements that I missed here and there.
+ * Feel free to edit whatever you want, though it might be slightly
+ * frustrating to deal with my code quality.
+ * Visit my website here: https://lee-mon.neocities.org/
+*/
+
+:root {
+    --main-text: #bfd0ce;
+    --main-highlight: #b07fe1;
+    --main-highlight-2: #af9bc4;
+    --main-background: #1c1a20;
+    --link-color: #a481dc;
+    --link-visited: #dcc181;
+    --content-background: #ffffff10;
+    --browse-card-background: #ffffff10;
+    --highlight-background: #ffffff30;
+    --highlight-background-2: #ffffff20;
+    --separator: #444444;
+    --welcome-background: #221d39;
+    --header-background: #241548;
+    --header-background-2: #434246;
+    --footer-background: #241548;
+    --upload-dashed-border: #5a595e;
+    
+    --cust-button-background-1: #5a1d8c;
+    --cust-button-background-2: #300f4a;
+    --cust-button-border: #7a3fab;
+    --cust-button-border-2: #512a72;
+    --cust-button-color: #dfe9ed;
+    --cust-button-color-disabled: #717678;
+    
+    --accent-background: #5a1d8c;
+    --upload-background: #434046;
+    
+    --textbox-background: #1c1a20;
+    --textbox-border: #928a9f;
+}
+
+body, html {
+    background: #000000;
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 1.1rem;
+}
+
+.page {
+    background-color: var(--main-background);
+    color: var(--main-text);
+}
+
+.content.single-Col.misc-page {
+    background-color: var(--content-background) !important;
+}
+
+a {
+    color: var(--link-color);
+}
+
+a:hover {
+    filter: brightness(1.2);
+}
+
+a:visited, .misc-page.columns a:visited {
+    color: var(--link-visited);
+}
+
+.interior .header-Outro a {
+    color: var(--link-color);
+}
+
+.interior .header-Outro a:visited {
+    color: var(--link-visited);
+}
+
+.website-Gallery.int-Gall li {
+    background-color: var(--browse-card-background);
+    border-color: var(--browse-card-background);
+    
+    a {
+        color: var(--main-text);
+    }
+    
+    a:visited {
+        color: var(--main-text);
+    }
+}
+
+.img-Holder {
+    border-color: var(--browse-card-background);
+}
+
+.content.misc-page.columns .col-66, .misc-page.columns.footer-Content .col-66 {
+    background-color: var(--content-background);
+}
+
+.content.misc-page, .misc-page.footer-Content {
+    background-color: var(--content-background);
+}
+
+.col-left {
+    border-right-color: var(--separator);
+}
+
+.large-portrait {
+    border-color: var(--separator);
+}
+
+.news-item .files {
+    background-color: var(--content-background);
+}
+
+.file .title {
+    color: var(--main-text);
+}
+
+.welcome {
+    background-color: var(--welcome-background);
+}
+
+.header-Base{
+    border-bottom-color: var(--separator);
+    
+    a {
+        color: var(--main-text);
+    }
+    
+    a:visited {
+        color: var(--main-text);
+    }
+}
+
+.header-Nav {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    align-items: center;
+    justify-items: start;
+    background: none;
+    background-color: var(--header-background);
+    color: var(--main-text);
+    border-bottom-color: var(--separator);
+}
+
+.status-Nav {
+    float: none;
+    justify-self: end;
+}
+
+.header-Nav .dropdown {
+    height: initial;
+}
+
+.header-Outro {
+    background: none;
+    background-color: var(--header-background-2);
+    color: var(--main-text);
+}
+
+.footer-Outro {
+    background-color: var(--footer-background);
+    border-top: var(--separator);
+}
+
+.interior .header-Outro .screenshot {
+    border-color: var(--upload-dashed-border);
+}
+
+.footer-Base {
+    color: var(--main-text);
+    
+    a {
+        color: var(--main-text);
+    }
+}
+
+.btn-Action {
+    background: linear-gradient(var(--cust-button-background-1), var(--cust-button-background-2));
+    border: 0.15rem solid var(--cust-button-border);
+    border-bottom-color: var(--cust-button-border-2);
+    border-right-color: var(--cust-button-border-2);
+    color: var(--cust-button-color);
+    text-shadow: 0.05rem 0.05rem 0.125rem #000;
+}
+
+.btn-Action:not(:disabled):hover {
+    background: linear-gradient(var(--cust-button-background-1), var(--cust-button-background-2));
+    filter: brightness(1.3);
+}
+
+.btn-Action:not(:disabled):active {
+    filter: brightness(0.75);
+    border-top-color: var(--cust-button-border-2);
+    border-left-color: var(--cust-button-border-2);
+    border-bottom-color: var(--cust-button-border);
+    border-right-color: var(--cust-button-border);
+}
+
+.header-Outro .signup-Form {
+    background: none;
+    background-color: var(--content-background);
+}
+
+.header-Outro .signup-Form fieldset {
+    background: none;
+}
+
+.content-Base {
+    background-color: var(--main-background);
+}
+
+.files {
+    background-color: var(--content-background);
+}
+
+.files .list .upload-Boundary.with-instruction {
+    background: none;
+}
+
+.files .list .upload-Boundary {
+    background: none;
+    border-color: var(--upload-dashed-border);
+}
+
+.misc-icon {
+    filter: brightness(0.5);
+}
+
+.alert {
+    background-color: var(--accent-background);
+}
+
+.files .header {
+    background-color: var(--upload-background);
+}
+
+.files .uploading {
+    background: none;
+    background-color: var(--upload-background);
+    color: var(--main-text);
+}
+
+.files.list-view .list .file:nth-child(2n) {
+    background-color: var(--content-background);
+}
+
+.files.list-view .list .file > .overlay a {
+    color: var(--link-color);
+}
+
+.folder-icon {
+    filter: hue-rotate(90deg);
+}
+
+.files.list-view .btn.iconview-button { background-color: var(--cust-button-background-1); }
+.files.list-view .btn.listview-button { background-color: var(--cust-button-background-2); }
+.files .btn.iconview-button { background-color: var(--cust-button-background-2); }
+.files .btn.listview-button { background-color: var(--cust-button-background-1); }
+.files .btn-group .btn:focus { background-color: var(--main-highlight); filter: brightness(1.2); }
+
+a.tag, a.tag:visited {
+    border: 0.1rem solid var(--cust-button-border);
+    background: none;
+    background-color: var(--cust-button-background-2);
+    color: var(--link-color) !important;
+}
+
+a.tag:hover {
+    background-color: inherit;
+}
+
+.header-Nav .dropdown-menu {
+    background-color: var(--header-background);
+    border: 0.15rem solid var(--cust-button-border);
+}
+
+.header-Nav a:hover, .header-Nav a:visited:hover,
+.header-Nav a:focus, .header-Nav a:visited:focus {
+    background-color: var(--highlight-background);
+}
+
+.header-Nav .dropdown-menu li a:hover, .header-Nav .dropdown-menu li a:focus {
+    background-color: var(--highlight-background);
+}
+
+.header-Nav .dropdown-menu .divider {
+    border-bottom: 0.15rem solid var(--cust-button-border);
+}
+
+.select-Container {
+    border: 0.15rem solid var(--cust-button-border);
+    border-radius: 0.3rem;
+    background: linear-gradient(180deg, var(--cust-button-background-1), var(--cust-button-background-2));
+    color: var(--button-text);
+    cursor: pointer;
+    display: grid;
+    grid-template-areas: "select";
+    align-items: center;
+    pointer-events: none;
+}
+
+select {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    outline: none;
+}
+
+.input-Select {
+    padding-left: 0.5rem;
+    pointer-events: auto;
+}
+
+select, .select-Container::after {
+    grid-area: select;
+}
+
+.select-Container::after {
+    content: "";
+    justify-self: end;
+    width: 1rem;
+    height: 0.6rem;
+    background-color: var(--main-text);
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+    margin-right: 0.5rem;
+}
+
+.select-Container:hover {
+    filter: brightness(1.2);
+}
+
+#tag, .input-Area.typeahead.tt-hint, input[type="text"], input[type="password"], input[type="email"], textarea {
+    border: 0.15rem solid var(--textbox-border);
+    background: none;
+    background-color: var(--textbox-background) !important;
+    color: var(--main-text) !important;
+}
+
+.section.plans.welcome {
+    background-color: var(--main-background);
+}
+
+.section {
+    background-color: var(--highlight-background-2);
+}
+
+.section.plans.welcome .plan-overview .col.free {
+    background-color: var(--browse-card-background);
+    border-color: var(--upload-dashed-border);
+}
+
+.section.plans.welcome .plan-overview .col.supporter {
+    background-color: var(--highlight-background);
+}
+
+.form-container {
+    color: var(--page-text);
+}
+
+.section.plans.welcome .plan-overview h3 {
+    color: var(--main-highlight);
+}
+
+.section.plans h2, .section.plans h3.subtitle, .section.plans.welcome h3 {
+    color: var(--main-highlight-2);
+}
+
+.plan-chart td:nth-child(2n), .plan-chart td {
+    border-color: var(--textbox-border);
+    background-color: var(--content-background);
+}
+
+.plan-chart th.professional {
+    background-color: var(--main-highlight-2);
+}
+
+.news-item .user {
+    color: var(--main-highlight) !important;
+}
+
+.news-item .you {
+    color: var(--link-visited) !important;
+}
+
+.news-item {
+    border-top-color: var(--upload-dashed-border);
+}
+
+.post-comment {
+    background-color: var(--content-background);
+}
+
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover, .nav-tabs > .active > a:focus,
+.nav-tabs > li > a:hover, .nav-tabs > li > a:focus {
+    background-color: var(--upload-dashed-border);
+    border-color: var(--textbox-border);
+    color: var(--main-text);
+}
+
+.popover {
+    background-color: var(--accent-background);
+    color: var(--main-text);
+}
+
+.popover.bottom .arrow::after {
+    border-bottom-color: var(--accent-background);
+}
+
+.popover a {
+    color: var(--main-text);
+}
